@@ -1,17 +1,15 @@
-def bubblesort(array)
-  i = array.length
-  while (i > 0)
-    j = 0
-    while (j < i)
-      if (array[j] > array[j + 1]) {
-        temp = array[j]
-        array[j] = array[j + 1]
-        array[j + 1] = temp
-      }
+def bubblesort(a)
+  i = a.length
+  while (i > 0) do
+    for j in 0...i-1 do
+      if a[j] > a[j+1]
+        a[j], a[j+1] = a[j+1], a[j]
       end
-      j += 1
     end
     i -= 1
   end
-  return array
+  puts a
 end
+
+test = [8, 9, 5, 6, 3, 7]
+bubblesort(test)
