@@ -8,8 +8,5 @@ def bubblesort(a)
     end
     i -= 1
   end
-  puts a
+  return a
 end
-
-test = [8, 9, 5, 6, 3, 7]
-bubblesort(test)
